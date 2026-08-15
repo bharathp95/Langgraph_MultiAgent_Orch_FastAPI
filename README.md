@@ -95,7 +95,7 @@ docker run -p 8000:8000 --env-file .env langgraph-fastapi
 
 ## Deployment
 
-Deployed on [Render](https://render.com) using the included `Dockerfile`. Environment variables (`GROQ_API_KEY`, `TAVILY_API_KEY`) are set directly in the Render dashboard rather than committed to the repo.
+Deployed on [Render](https://render.com) using the included `Dockerfile`. 
 
 ## Notes / limitations
 
