@@ -3,7 +3,13 @@
 <head>
   <style>
     * { box-sizing: border-box; }
-
+    p.explainer {
+  color: #ffffff;
+  font-size: 2.2vmin;
+  line-height: 1.5;
+  margin-bottom: 3vh;
+  max-width: 90%;
+}
     body {
       background: #ff9500;
       background: linear-gradient(90deg, rgba(255, 149, 0, 1) 0%, rgba(106, 9, 121, 1) 53%, rgba(0, 212, 255, 1) 100%);
@@ -77,6 +83,7 @@
       }
       h1 { font-size: 28px; }
       p.subtitle { font-size: 14px; }
+      p.explainer { font-size: 13px; }
       input { font-size: 15px; }
       button { font-size: 15px; width: auto; padding: 10px 22px; }
       #answer { font-size: 15px; }
@@ -88,11 +95,14 @@
   <h1>Research Assistant</h1>
   <p class="subtitle">Enter a topic and get a written summary</p>
 
-  <p style="color:#ffffff; font-size:2.6vmin; margin-bottom:3vh; line-height:1.5;">
-    Behind the scenes, a <strong>supervisor agent</strong> reads your topic and decides what happens next.
-    It sends a <strong>researcher agent</strong> to search the web first, then hands those findings to a
-    <strong>writer agent</strong> to turn into a clean summary — all automatically, in one request.
-  </p>
+<p class="explainer">
+  Behind the scenes, a <strong>supervisor agent</strong> reads your topic and decides what happens next.
+  It sends a <strong>researcher agent</strong> to search the web first, then hands those findings to a
+  <strong>writer agent</strong> to turn into a clean summary — all automatically, in one request.
+  <br><br>
+  <strong>Please visit my GitHub to see the LangGraph code</strong><br>
+  <a href="https://github.com/bharathp95/Langgraph_MultiAgent_Orch_FastAPI" target="_blank" style="color:#ffffff; text-decoration:underline;">GitHub Link</a>
+</p>
 
   <input id="topic" placeholder="Enter a topic..." />
   <button onclick="research()">Research</button>
